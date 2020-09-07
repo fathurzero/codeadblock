@@ -1,0 +1,9 @@
+//kode AdSense Invalid Click Protector
+<?php 
+	if( aicp_can_see_ads() ) { // This part will show ads to your non-banned visitors
+		$adCode = '<div class="aicp"><!-- Don\'t forget to add this div with aicp class -->
+//KODE ADSENSE 
+		</div><!-- end of the aicp div -->';
+		echo $adCode;
+	}
+?>
